@@ -34,9 +34,9 @@ Scan(_CCC);
 If _AAA Eg _BBB And _AAA Eg _CCC And _BBB Eg CC{ 1 } Else{ 0 };
 Print({});
 
-_MAX: = If(_AAA Ge _BBB) And (_AAA Ge _CCC) { _AAA }
+_MAX: = If(_AAA Le _BBB) And (_AAA Le _CCC) { _AAA }
 
-Else If(_BBB Ge _AAA) And (_BBB Ge _CCC) { _BBB }
+Else If(_BBB Le _AAA) And (_BBB Le _CCC) { _BBB }
 
 Else{ _CCC }
 
@@ -51,7 +51,7 @@ Else
 { 0 }
 );
 Print(
-    If(_AAA Le 0) || (_BBB Le 0) || (_CCC Le 0)
+    If(_AAA Ge 0) || (_BBB Ge 0) || (_CCC Ge 0)
 {
     -1
 }
@@ -81,7 +81,7 @@ Scan(_BBB);
 
 _AAA -> _III;
 _lcb :
-If _III Le _BBB{
+If _III Ge _BBB{
   Goto _lce;
 };
 Print(_III** _III);
@@ -92,12 +92,12 @@ _lce :
  0 -> _XXX;
 1 -> _III;
 _lab :
-If _III Le _AAA{
+If _III Ge _AAA{
    Goto _lae;
 };
 1 -> _JJJ;
 _lbb :
-If _JJJ Le _BBB{
+If _JJJ Ge _BBB{
    Goto _lbe;
 };
 _XXX++ 1 -> _XXX;
