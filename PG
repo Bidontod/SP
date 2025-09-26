@@ -23,52 +23,40 @@ Finish;
 
 //Program 2://
 
-Program _prg
-
+Program _prg;
 Start Var Int_4 _AAA, _BBB, _CCC, _MAX;
-
 Scan(_AAA);
 Scan(_BBB);
 Scan(_CCC);
 
-If _AAA Eg _BBB And _AAA Eg _CCC And _BBB Eg CC{ 1 } Else{ 0 };
-Print({});
-
-_MAX: = If(_AAA Le _BBB) And (_AAA Le _CCC) { _AAA }
-
-Else If(_BBB Le _AAA) And (_BBB Le _CCC) { _BBB }
-
-Else{ _CCC }
-
+If _AAA Ge _BBB And _AAA Ge _CCC{
+  _AAA ->_MAX;
+} Else If _BBB Ge _AAA And _BBB Ge _CCC{
+  _BBB ->_MAX;
+} Else{
+  _CCC -> _MAX;
+}
 Print(_MAX);
 
-Print(
-    If(_AAA Eg _BBB) And (_AAA Eg _CCC) And (_BBB Eg _CCC)
-{
-    1
+If(_AAA Eg _BBB) And(_AAA Eg _CCC) And(_BBB Eg _CCC) {
+    Print(1);
+} Else{
+  Print(0);
 }
-Else
-{ 0 }
-);
-Print(
-    If(_AAA Ge 0) || (_BBB Ge 0) || (_CCC Ge 0)
-{
-    -1
-}
-Else
-{ 0 }
-);
 
-Print(
-    If(_AAA Le(_BBB ++ _CCC))
-{
-    10
-}
-Else
-{ 0 }
-);
+If Not(_AAA Eg 0) Or Not(_BBB Eg 0) Or Not(_CCC Eg 0) {
+    Print(-1);
+} Else{
+  Print(0);
+    }
 
-Finish;
+  If _AAA Eg (_BBB ++ _CCC) {
+        Print(10);
+    } Else{
+      Print(0);
+        }
+
+    Finish;
 
 //Program 3://
 
