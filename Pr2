@@ -33,4 +33,4 @@ If _aaa Eg (_bbb ++ _ccc) {
     Print(0);
 }
 
-Finish;
+Finish
