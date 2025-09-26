@@ -1,0 +1,113 @@
+//Program 1://
+
+Program _prg;
+
+Start Var Int_4 _AAA, _BBB, _XXX, _YYY;
+
+Scan(_AAA);
+Scan(_BBB);
+
+Print(_AAA ++ _BBB);
+Print(_AAA -- _bBB);
+Print(_AAA** _BBB);
+Print(_AAA Div _BBB);
+Print(_AAA Mod _BBB);
+
+(_AAA -- _BBB) ** 10 ++ (_AAA ++ _BBB) Div 10 = > _XXX;
+_XXX + _XXX Mod 10 = > _YYY;
+
+Print(_XXX);
+Print(_YYY);
+
+Finish;
+
+//Program 2://
+
+Program _prg
+
+Start Var Int_4 _AAA, _BBB, _CCC, _MAX;
+
+Scan(_AAA);
+Scan(_BBB);
+Scan(_CCC);
+
+If _AAA Eg _BBB And _AAA Eg _CCC And _BBB Eg CC{ 1 } Else{ 0 };
+Print({});
+
+_MAX: = If(_AAA Ge _BBB) And (_AAA Ge _CCC) { _AAA }
+
+Else If(_BBB Ge _AAA) And (_BBB Ge _CCC) { _BBB }
+
+Else{ _CCC }
+
+Print(_MAX);
+
+Print(
+    If(_AAA Eg _BBB) And (_AAA Eg _CCC) And (_BBB Eg _CCC)
+{
+    1
+}
+Else
+{ 0 }
+);
+Print(
+    If(_AAA Le 0) || (_BBB Le 0) || (_CCC Le 0)
+{
+    -1
+}
+Else
+{ 0 }
+);
+
+Print(
+    If(_AAA Le(_BBB ++ _CCC))
+{
+    10
+}
+Else
+{ 0 }
+);
+
+Finish;
+
+//Program 3://
+
+Program _prg;
+
+Start Var Int_4 _AAA, _BBB, _III, _JJJ, _XXX;
+
+Scan(_AAA);
+Scan(_BBB);
+
+_AAA -> _III;
+_lcb :
+If _III Le _BBB{
+  Goto _lce;
+};
+Print(_III** _III);
+_III ++ 1 -> _;
+Goto _lcb;
+_lce :
+
+ 0 -> _XXX;
+1 -> _III;
+_lab :
+If _III Le _AAA{
+   Goto _lae;
+};
+1 -> _JJJ;
+_lbb :
+If _JJJ Le _BBB{
+   Goto _lbe;
+};
+_XXX++ 1 -> _XXX;
+_JJJ++ 1 -> _JJJ;
+Goto _lbb;
+_lbe :
+_III ++ 1 -> _III;
+Goto _lab;
+_lae :
+Print(_XXX);
+
+Finish;
+
