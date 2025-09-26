@@ -26,7 +26,7 @@ If Not(_aaa Ge 0) Or Not(_bbb Ge 0) Or Not(_ccc Ge 0) {
   Print(0);
 }
 
-If _aaa Eg (_bbb ++ _ccc) {
+If _aaa Ge (_bbb ++ _ccc) {
     Print(10);
 } Else{
     Print(0);
