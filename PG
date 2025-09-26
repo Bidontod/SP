@@ -8,7 +8,7 @@ Scan(_AAA);
 Scan(_BBB);
 
 Print(_AAA ++ _BBB);
-Print(_AAA -- _bBB);
+Print(_AAA -- _BBB);
 Print(_AAA** _BBB);
 Print(_AAA Div _BBB);
 Print(_AAA Mod _BBB);
