@@ -19,5 +19,5 @@ _xxx ++ _xxx Mod 10 -> _yyy;
 Print(_xxx);
 Print(_yyy);
 
-Finish;
+Finish
 
