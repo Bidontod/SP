@@ -9,23 +9,23 @@ Scan(_BBB);
 
 _AAA -> _III;
 _lcb :
-If _III Ge _BBB{
+If _III Ge _BBB ++ 1{
   Goto _lce;
 };
 Print(_III** _III);
-_III ++ 1 -> _;
+_III ++ 1 -> _III;
 Goto _lcb;
 _lce :
 
  0 -> _XXX;
 1 -> _III;
 _lab :
-If _III Ge _AAA{
+If _III Ge _AAA ++ 1{
    Goto _lae;
 };
 1 -> _JJJ;
 _lbb :
-If _JJJ Ge _BBB{
+If _JJJ Ge _BBB ++ 1{
    Goto _lbe;
 };
 _XXX++ 1 -> _XXX;
