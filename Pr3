@@ -1,6 +1,6 @@
 //Program 3://
 
-Program _prg;
+Program _PRG;
 
 Start Var Int_4 _AAA, _BBB, _III, _JJJ, _XXX;
 
