@@ -37,4 +37,4 @@ Goto _lab;
 _lae :
 Print(_xxx);
 
-Finish;
+Finish
