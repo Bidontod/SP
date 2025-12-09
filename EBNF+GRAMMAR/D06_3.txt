@@ -1,0 +1,38 @@
+Program _prg;
+
+Start Var Int_4 _aaa, _bbb, _iii, _jjj, _xxx;
+
+Scan(_aaa);
+Scan(_bbb);
+
+_aaa -> _iii;
+_lcb :
+If _iii Ge _bbb ++ 1{
+  Goto _lce;
+};
+Print(_iii** _iii);
+_iii ++ 1 -> _iii;
+Goto _lcb;
+_lce :
+
+0 -> _xxx;
+1 -> _iii;
+_lab :
+If _iii Ge _aaa ++ 1{
+   Goto _lae;
+};
+1 -> _jjj;
+_lbb :
+If _jjj Ge _bbb ++ 1{
+   Goto _lbe;
+};
+_xxx++ 1 -> _xxx;
+_jjj++ 1 -> _jjj;
+Goto _lbb;
+_lbe :
+_iii ++ 1 -> _iii;
+Goto _lab;
+_lae :
+Print(_xxx);
+
+Finish
