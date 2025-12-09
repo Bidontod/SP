@@ -1,0 +1,34 @@
+Program _prg;
+Start Var Int_4 _aaa, _bbb, _ccc, _max;
+Scan(_aaa);
+Scan(_bbb);
+Scan(_ccc);
+
+If _aaa Ge _bbb And _aaa Ge _ccc{
+  _aaa -> _max;
+} Else If _bbb Ge _aaa And _bbb Ge _ccc{
+  _bbb -> _max;
+} Else{
+  _ccc -> _max;
+}
+Print(_max);
+
+If(_aaa Eg _bbb) And(_aaa Eg _ccc) And(_bbb Eg _ccc) {
+    Print(1);
+} Else{
+  Print(0);
+}
+
+If Not(_aaa Ge 0) Or Not(_bbb Ge 0) Or Not(_ccc Ge 0) {
+    Print(-1);
+} Else{
+  Print(0);
+}
+
+If _aaa Ge (_bbb ++ _ccc) {
+    Print(10);
+} Else{
+    Print(0);
+}
+
+Finish

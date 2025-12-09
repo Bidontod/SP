@@ -1,0 +1,21 @@
+Program _prg;
+
+Start Var Int_4 _aaa, _bbb, _xxx, _yyy;
+
+Scan(_aaa);
+Scan(_bbb);
+
+Print(_aaa ++ _bbb);
+Print(_aaa -- _bbb);
+Print(_aaa** _bbb);
+Print(_aaa Div _bbb);
+Print(_aaa Mod _bbb);
+
+(_aaa -- _bbb) ** 10 ++ (_aaa ++ _bbb) Div 10 -> _xxx;
+_xxx ++ _xxx Mod 10 -> _yyy;
+
+Print(_xxx);
+Print(_yyy);
+
+Finish
+
