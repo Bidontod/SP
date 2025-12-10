@@ -20,7 +20,7 @@ If(_aaa Eg _bbb) And(_aaa Eg _ccc) And(_bbb Eg _ccc) {
 }
 
 If Not(_aaa Ge 0) Or Not(_bbb Ge 0) Or Not(_ccc Ge 0) {
-    Print(-1);
+    Print(--1);
 } Else{
   Print(0);
 }
